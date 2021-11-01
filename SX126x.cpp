@@ -837,7 +837,7 @@ void SX126x::ProcessIrqs() {
 
 			if (txTimeout)
 				txTimeout();
-		} else if (OperatingMode == MODE_TX) {
+		} else if (OperatingMode == MODE_RX) {
 			HalPostRx();
 
 			if (rxTimeout)
